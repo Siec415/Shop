@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <title> Shop </title>
-        <link rel="stylesheet" href="styles.css">
-        <script src='app.js'> </script>
-</head>
+    <head>
+            <title> Shop </title>
+            <link rel="stylesheet" href="styles.css">
+            <script src='app.js'> </script>
+    </head>
 
-<body>
-    <header>
-        <img class="logo" src="Images/" alt="logo">
-        <nav>
-            <ul>
-                <li href="#"><a></a></li>
-                <li href="#"><a></a></li>
-                <li href="#"><a>About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <!-- <header>
+            <img class="logo" src="Images/" alt="logo">
+            <nav>
+                <ul>
+                    <li href="#"><a></a></li>
+                    <li href="#"><a></a></li>
+                    <li href="#"><a>About</a></li>
+                </ul>
+            </nav>
+        </header> -->
+            
+        <div class="row">
+            <div class="column">
+                <div class="polaroid">
+                    <img src='Images/redjacket.png'class=images> 
+                    <div class="caption">
+                        <p>$30</p>
+                    </div>
+                
+                </div>
+                <div class="polaroid">
+                    <img src='Images/motorcycle-png-500.png'class=images> 
+                    <div class="caption">
+                        <p>$30</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="column">
+                <div class="polaroid">
+                    <img src='Images/jordans-png.png'class=images>
+                    <div class="caption">
+                        <p>$30</p>
+                    </div>
+                </div> 
+                <div class="polaroid">
+                    <img src='Images/dodgechallenger.jpg'class=images>
+                    <div class="caption">
+                        <p>$30</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
         
-
-        
-    <div id='content'>
-        
-
-    <img src='Images/redjacket.png'>
-    <img src='Images/motorcycle-png-500.png'>
-    <img src='Images/jordans-png.png'>
-    <img src='Images/dodgechallenger.jpg'>
-    <button id=button> Find Accounts</button>
-    <button id=button>Favorites</button>
-    <button id=button>Recent Uploads</button>
-    <button id=button>My Uploads</button>
-
-
-
-    </div>
-</body>
+        <div class="footer-bar">
+            <button class=button>Find Accounts</button>
+            <button class=button onclick="location.href='favorites.html'" type="button">
+                Favorites</button>
+            <button class=button>Recent Uploads</button>
+            <button class=button>My Uploads</button>
+        </div>        
+    </body>
 
 </html>
 
