@@ -52,6 +52,16 @@ nav{
     
 }
 
+header{
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    letter-spacing:2px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top:10px;
+    padding-left:10px;
+}
+
 .logo {
     color: #f3f2ff;
     text-transform: uppercase;
@@ -110,7 +120,7 @@ nav{
     align-items: center;
     overflow-x: hidden;
     transition:0.5s;
-    opacity:0.5;
+    opacity:0.65;
 
 }
 
@@ -125,4 +135,78 @@ nav{
     letter-spacing:2px;
     font-weight: bold;
     font-size:13px;
+}
+
+.content{
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    letter-spacing:2px;
+    font-size: 20px;
+    padding-top:10px;
+    padding-left:10px;
+}
+.description{
+    padding-top:5vh;
+    text-align: center;
+}
+button:focus {outline:0;}
+.buy-btn{
+    padding:4px 15px;
+    color: #f3f2ff;
+    text-decoration: none;
+    letter-spacing:2px;
+    font-weight: bold;
+    font-size:13px;
+    background-color: #54bbe8;
+    border-style: none;
+    border-radius: 10px;
+}
+.buy-btn:hover{
+    padding:4px 15px;
+    color: #54bbe8;
+    text-decoration: none;
+    letter-spacing:2px;
+    font-weight: bold;
+    font-size:13px;
+    background-color: #f3f2ff;
+    border:#54bbe8 solid 1px;
+    border-radius: 10px;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+.cart{
+    color: #f3f2ff;
+    position: absolute;
+    z-index: 1;
+    right:1vw;
+    display:block;
+}
+
+.cart:hover{
+    color: #b8e7ff;
+    transition:0.5s;
+}
+body{
+    overflow-x:hidden;
+}
+.cart-tab{
+    opacity: 0.65;
+    position: absolute;
+    right:0px;
+    height:90vh;
+    top:5vh;
+    background-color: #8e8cd4;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+.tab-active{
+    transform: translateX(0%);
+
 }

@@ -4,10 +4,20 @@ $(document).ready(function(){
         {
             $("#side-tabs").css("width", "200px");
             $("#row").css("margin-left", "200px");
-     
-            //$("#side-tabs").css("width", "0px");
-            //$("#row").css("margin-left", "0px");
+            $("header").css("margin-left", "200px");
+            $(".content").css("margin-left", "200px");
+
         });
    
-
 });
+const cartSlide = () => {
+  const cart = document.queryselector(".cart");
+  const cartTab = document.queryselector(".cart-tab");
+
+  cart.addEventListiner('click', ()=> {
+      cartTab.toggle('.tab-active');
+  });
+
+}
+
+cartSlide();
